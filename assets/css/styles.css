@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    padding-right: 100px;
+
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    color: #bf2524;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+#logo {
+    width: 250px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* hero section */
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    /* width: 100%; */
+    /* max-width: 50em; */
+    /* margin: auto; */
+    overflow: hidden;
+    /* padding-top: 50px; */
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 555px;
+    background-size: cover;
+    border-radius: 7px;
+
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    padding: 10px;
+    border: none;
+    background-color: #33bd8f11;
+    color: #fff;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0.1em;
+}
+
+.next-btn {
+    right: 0.1em;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    background-color: #979797;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active {
+    background-color: #3e6e7b;
+}
+
+
+/* Achievement section */
+
+.achievements {
+    text-align: center;
+    padding: 50px;
+    background: #eee;
+}
+
+.achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-info {
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: -50px;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account {
+    font-weight: bold;
+}
+
+.tag {
+    font-weight: lighter;
+    color: grey;
+}
+
+/*DELETE THIS TWO LINE*/
+.delete {
+    background-color: #b2b2fd;
+}
+
+.card-img div {
+    width: 90%;
+}
+
+/*IF USING IMAGES*/
+
+.card {
+    margin: 40px;
+    background-color: white;
+    color: black;
+    width: 270px;
+    max-height: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-img {
+    position: relative;
+    top: -50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Change the .card-img div to .card-img img to use img*/
+.card-img a,
+.card-img div {
+    height: 100px;
+    width: 85%;
+    /* Change this width here to change the width of the color/image */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.pv:hover {
+    transform: scale(1.12);
+}
+
+.card-imgs {
+    transition: all 0.5s;
+}
+
+
+
+
+/* csontact section */
+.contact-section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-section input[type="submit"] {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* footer section */
+footer {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive section for small screens  */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

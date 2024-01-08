@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>YODT</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <a href="./index.html">
+                <img id="logo" src="./assets/logo/logo-high-quality.png" alt="YODT LOGO">
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">YODT</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="./schholarships.html">Scholarships</a></li>
+                <li><a href="./bolg.html">Blog</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="slider">
+            <div class="slide" style="background-image: url(./assets/images/100.jpg);"></div>
+            <div class="slide" style="background-image: url(./assets/images/2.jpg);"></div>
+            <div class="slide" style="background-image: url(./assets/images/3.jpg);"></div>
+            <div class="slide" style="background-image: url(./assets/images/4.jpg);"></div>
+            <div class="slide" style="background-image: url(./assets/images/5.jpeg);"></div>
+            <div class="slide" style="background-image: url(./assets/images/6.jpeg);"></div>
+        </div>
+
+        <!-- buttons to move slides -->
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+
+
+        <div class="dots-container"></div>
+    </div>
+
+
+    <!-- achievement -->
+    <div class="achievements" id="achievements">
+        <h2>Achievements Section</h2>
+        <div class="achievement-cards">
+
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Visit</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Visit the YDDD .... etc </span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Moi</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Moi</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Moi</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Moi</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="card">
+                    <div class="card-img">
+                        <div class="card-imgs pv delete"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="flex">
+                            <div class="project-title">Moi</div>
+                            <span class="tag">description</span>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- contact section -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+
+    <footer>
+        <div class="footer-section logo-section">
+            <h3>Our Logo</h3>
+            <img src="./assets/logo/logo-high-quality.png" alt="Organization Logo">
+        </div>
+    
+        <div class="footer-section map-section">
+            <h3>Our Location</h3>
+            <!-- Replace the iframe src attribute with your own Google Maps embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.69174178103!2d29.006393375146153!3d41.11942287133514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab728fc42dd33%3A0x17d213078fb809f4!2zTmnFn2FudGHFn8SxIMOcbml2ZXJzaXRlc2k!5e0!3m2!1str!2str!4v1704743667808!5m2!1str!2str" width="300" height="200" referrerpolicy="no-referrer-when-downgrade" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    
+        <div class="footer-section contact-section">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Main Street, Cityville</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>
