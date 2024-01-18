@@ -1,0 +1,21 @@
+
+#article {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+

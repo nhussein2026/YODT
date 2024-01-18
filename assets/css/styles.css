@@ -7,12 +7,34 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0ef;
+    color: #99233f;
+
+    /* scrollbar setting */
+    --sb-track-color: #eeeeee;
+    --sb-thumb-color: #be2423;
+    --sb-size: 6px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 27px;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 27px;
+  }
 
 /* navbar */
 nav {
     height: 100px;
-    background-color: #fff;
+    background-color: #eaeaea;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
     text-align: center;
@@ -59,10 +81,8 @@ nav a:hover {
     height: 100vh;
     /* width: 100%; */
     /* max-width: 50em; */
-    /* margin: auto; */
+    margin-top: 2rem;
     overflow: hidden;
-    /* padding-top: 50px; */
-
 }
 
 .slider {
@@ -194,6 +214,7 @@ nav a:hover {
     height: 100px;
     display: flex;
     justify-content: center;
+
 }
 
 /* Change the .card-img div to .card-img img to use img*/
@@ -201,7 +222,6 @@ nav a:hover {
 .card-img div {
     height: 100px;
     width: 85%;
-    /* Change this width here to change the width of the color/image */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -223,7 +243,6 @@ nav a:hover {
     width: 50%;
     margin: auto;
     padding: 20px;
-    background-color: #f8f8f8;
     border-radius: 5px;
 }
 
@@ -241,7 +260,8 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -288,4 +308,36 @@ footer {
         display: block;
         margin: 5px 0;
     }
+}
+
+.container {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 40px;
+}
+
+.submit-btn {
+    height: 2rem;
+    border-radius: 0.5rem;
+    color: #000;
+    border: none;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #bbb;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+
+.hidden {
+    display: none;
 }
